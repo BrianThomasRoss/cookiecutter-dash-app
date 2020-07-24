@@ -19,7 +19,6 @@ pip install -r requirements/dev.txt
 
 ## Deployment
 
-{%- if cookiecutter.use_heroku == "yes" %}
 
 ## Heroku
 
