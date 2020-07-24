@@ -1,0 +1,3 @@
+# Installs developer requirements and production requirements
+-r prod.txt
+black==19.10b0

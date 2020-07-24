@@ -1,0 +1,3 @@
+# Most Paas (Platforms as a service) require a `requirements.txt` in projects root directory
+# This installs production requirements only
+-r requirements/prod.txt
