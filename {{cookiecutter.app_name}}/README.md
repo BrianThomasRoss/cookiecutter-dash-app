@@ -52,6 +52,3 @@ Deployment by using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cl
     ```bash
     git push heroku master
     ```
-
-{%- endif %}
-
