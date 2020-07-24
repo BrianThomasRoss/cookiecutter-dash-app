@@ -1,0 +1,8 @@
+{
+   "name": "{{cookiecutter.app_name}}",
+   "buildpacks": [
+      {
+         "url": "heroku/python"
+      }
+   ]
+}
