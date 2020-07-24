@@ -1,0 +1,12 @@
+{
+  "full_name": "Brian Ross",
+  "email": "ml@brianthomasross.com",
+  "github_username": "brianthomasross",
+  "project_name": "My Dash App",
+  "app_name": "{{cookiecutter.project_name.lower().replace('-', '_').replace(' ', '_')}}",
+  "project_short_description": "A plotly-dash application",
+  "twitter_username": "brianthomasross",
+  "linkedin_profile": "brianthomasross",
+  "use_pipenv": ["no", "yes"],
+  "python_version": ["3.8", "3.7", "3.6"]
+}
