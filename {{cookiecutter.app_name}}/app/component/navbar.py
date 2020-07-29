@@ -24,7 +24,7 @@ content = html.Div(
                     label="More",
                 ),
             ],
-            brand="{{cookiecutter.app_name}}",
+            brand="{{cookiecutter.project_name}}",
             brand_href="#",
             color="primary",
             dark=True,
