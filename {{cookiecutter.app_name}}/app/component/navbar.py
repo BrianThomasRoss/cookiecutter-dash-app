@@ -11,7 +11,7 @@ content = html.Div(
     [
         dbc.NavbarSimple(
             children=[
-                dbc.NavItem(dbc.NavLink("Page 1", href="#")),
+                dbc.NavItem(dbc.NavLink("Home", href="#")),
                 dbc.DropdownMenu(
                     children=[
                         dbc.DropdownMenuItem("Learn More", header=True),
@@ -24,7 +24,7 @@ content = html.Div(
                     label="More",
                 ),
             ],
-            brand="My Dash App",
+            brand="{{cookiecutter.app_name}}",
             brand_href="#",
             color="primary",
             dark=True,
