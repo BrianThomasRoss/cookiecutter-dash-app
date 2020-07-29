@@ -11,7 +11,7 @@ content = html.Div(
     [
         dbc.NavbarSimple(
             children=[
-                dbc.NavItem(dbc.NavLink("Home", href="#")),
+                dbc.NavItem(dbc.NavLink("Home", href="/")),
                 dbc.DropdownMenu(
                     children=[
                         dbc.DropdownMenuItem("Learn More", header=True),
@@ -25,7 +25,7 @@ content = html.Div(
                 ),
             ],
             brand="{{cookiecutter.project_name}}",
-            brand_href="#",
+            brand_href="/",
             color="primary",
             dark=True,
         )
