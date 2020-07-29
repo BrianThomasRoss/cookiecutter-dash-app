@@ -33,13 +33,15 @@ def register_dashboard(server):
         server=server,
     )
 
-    dashboard.layout = html.Div(children=[
-        dcc.Location(id='url', refresh=False),
-        navbar.content,
-        dbc.Container(id='page-content', className='mt-4'),
-        html.Hr(),
-        footer.content,
-    ])
+    dashboard.layout = html.Div(
+        children=[
+            dcc.Location(id="url", refresh=False),
+            navbar.content,
+            dbc.Container(id="page-content", className="mt-4"),
+            html.Hr(),
+            footer.content,
+        ]
+    )
 
     with server.app_context():
         dashboard.title = "my_dash_app"

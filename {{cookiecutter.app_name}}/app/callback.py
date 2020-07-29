@@ -18,6 +18,7 @@ def register_callbacks(app):
     URL Routing for Multi-Page Apps: https://dash.plot.ly/urls
 
     """
+
     @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
     def display_page(pathname):
         """

@@ -11,7 +11,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 
 
-footer = dbc.Container(
+content = dbc.Container(
     dbc.Row(
         dbc.Col(
             html.P(
