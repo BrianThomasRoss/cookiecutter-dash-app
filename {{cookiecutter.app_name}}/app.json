@@ -1,13 +1,8 @@
 {
-  "name": "app",
-  "FLASK_APP": {
-  "description": "FLASK_APP.",
-  "value": "manage.py"
-},
-"buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ]
-  ]
+   "name": "{{cookiecutter.app_name}}",
+   "buildpacks": [
+      {
+         "url": "heroku/python"
+      }
+   ]
 }
