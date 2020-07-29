@@ -1,6 +1,3 @@
-# Imports from 3rd party libraries
-
-# Imports from this application
 from app import create_app
 
 
