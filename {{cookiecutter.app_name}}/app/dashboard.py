@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """Application entry point definitions."""
 import dash
-from dash_bootstrap_components.themes import BOOTSTRAP
+import dash_core_components as dcc
+import dash_html_components as html
+import dash_bootstrap_components as dbc
 
-from .callback import register_callbacks
+from app.callback import register_callbacks
+from app.component import navbar, footer
 
 
 def register_dashboard(server):
@@ -30,8 +33,16 @@ def register_dashboard(server):
         server=server,
     )
 
+    dashboard.layout = html.Div(children=[
+        dcc.Location(id='url', refresh=False),
+        navbar.content,
+        dbc.Container(id='page-content', className='mt-4'),
+        html.Hr(),
+        footer.content,
+    ])
+
     with server.app_context():
-        dashboard.title = "{{cookiecutter.app_name}}"
+        dashboard.title = "my_dash_app"
         register_callbacks(dashboard)
 
     return dashboard

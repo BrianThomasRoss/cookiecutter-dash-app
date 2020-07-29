@@ -23,7 +23,7 @@ footer = dbc.Container(
                     ),
                     html.A(
                         html.I(className="fab fa-github-square mr-1"),
-                        href="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}",
+                        href="https://github.com/{{cookiecutter.github_username}}",
                     ),
                     html.A(
                         html.I(className="fab fa-linkedin mr-1"),

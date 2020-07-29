@@ -14,8 +14,11 @@ pipenv shell
 {%- else %}
 pip install -r requirements/dev.txt
 {%- endif %}
-
 ```
+
+Once you have installed the project dependencies you can run the app locally with the command
+
+``flask run``
 
 ## Deployment
 
@@ -31,9 +34,9 @@ Application configuration is in `app.json` and you should be able to deploy usin
 <a href="https://heroku.com/deploy" style="display: block"><img src="https://www.herokucdn.com/deploy/button.svg" title="Deploy" alt="Deploy"></a>
     <br>
 
-If you're unable to successfully deploy using the button you will need to try using the CLI.
-
 Deployment by using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli):
+
+If you're unable to successfully deploy using the button you will need to try using the CLI.
 
 ### Create a new Heroku App.
 

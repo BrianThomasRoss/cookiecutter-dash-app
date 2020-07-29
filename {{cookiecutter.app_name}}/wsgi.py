@@ -1,7 +1,7 @@
 # Imports from 3rd party libraries
 
 # Imports from this application
-from {{cookiecutter.app_name}} import create_app
+from app import create_app
 
 
 server = create_app()

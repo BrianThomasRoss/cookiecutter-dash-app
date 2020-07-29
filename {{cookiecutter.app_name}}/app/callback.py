@@ -8,6 +8,8 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
+from app.page import index, predictions, insights, process
+
 
 def register_callbacks(app):
     """Wrap the main application function with the application callbacks.
@@ -18,6 +20,15 @@ def register_callbacks(app):
     """
     @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
     def display_page(pathname):
+        """
+        To add a page to the list of registered callbacks add the page
+        to the imports above, then follow the convention below.
+
+        Example:
+
+            elif pathname == "/newUrlPath":
+                return new_page_module.layout
+        """
         if pathname == "/":
             return index.layout
         elif pathname == "/predictions":
