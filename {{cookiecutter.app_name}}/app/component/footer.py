@@ -19,7 +19,7 @@ content = dbc.Container(
                     html.Span("{{cookiecutter.full_name}}", className="mr-2"),
                     html.A(
                         html.I(className="fas fa-envelope-square mr-1"),
-                        href="mailto:<you>@<provider>.com",
+                        href="mailto:{{cookiecutter.email}}",
                     ),
                     html.A(
                         html.I(className="fab fa-github-square mr-1"),
