@@ -40,18 +40,12 @@ If you're unable to successfully deploy using the button you will need to try us
 
 ### Create a new Heroku App.
 
-    ```bash
     heroku create {{cookiecutter.app_name}}
-    ```
 
 ### Add buildpacks
 
-    ```bash
     heroku buildpacks:add --index=1 heroku/python
-    ```
 
 ### Deploy on Heroku by pushing to the `heroku` branch
 
-    ```bash
     git push heroku master
-    ```
