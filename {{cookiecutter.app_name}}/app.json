@@ -1,13 +1,13 @@
 {
   "name": "app",
-  "buildpacks": [
+  "FLASK_APP": {
+  "description": "FLASK_APP.",
+  "value": "manage.py"
+},
+"buildpacks": [
     {
       "url": "heroku/python"
     }
-  ],
-  "FLASK_APP": {
-    "description": "FLASK_APP.",
-    "value": "manage.py"
-  }
+  ]
   ]
 }
