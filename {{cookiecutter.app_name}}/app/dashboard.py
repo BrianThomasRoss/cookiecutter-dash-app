@@ -44,7 +44,7 @@ def register_dashboard(server):
     )
 
     with server.app_context():
-        dashboard.title = "my_dash_app"
+        dashboard.title = "{{cookiecutter.project_name}}"
         register_callbacks(dashboard)
 
     return dashboard
