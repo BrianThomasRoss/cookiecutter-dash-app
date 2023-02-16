@@ -4,4 +4,4 @@ dash-bootstrap-components==0.10.3
 gunicorn==19.9.0
 Flask==1.1.2
 pandas==1.1.0
-Werkzeug==1.0.1
+Werkzeug==2.2.3
